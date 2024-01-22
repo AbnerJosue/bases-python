@@ -21,4 +21,3 @@ print(mi_cd)
 print(len(mi_cd))
 
 del mi_cd
-
