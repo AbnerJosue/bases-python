@@ -1,0 +1,22 @@
+Puedes usar expresiones regulares para verificar si el código postal sigue el patrón dado. Aquí tienes una función `verificar_cp` que implementa esto:
+
+```python
+import re
+
+def verificar_cp(cp):
+    # Patrón regex para el código postal
+    patron = re.compile(r'^[A-Za-z]{2}\d{4}$')
+
+    # Comprobación del patrón
+    if patron.match(cp):
+        print("Ok")
+    else:
+        print("El código postal ingresado no es correcto")
+
+# Ejemplos de uso
+verificar_cp("AB1234")  # Ok
+verificar_cp("XYZ5678")  # El código postal ingresado no es correcto
+verificar_cp("12AB34")  # El código postal ingresado no es correcto
+```
+
+Esta función utiliza `re.compile` para crear un objeto de expresión regular que describe el patrón que estás buscando. Luego, utiliza `match` para verificar si el código postal coincide con ese patrón. Si hay coincidencia, imprime "Ok", de lo contrario, imprime "El código postal ingresado no es correcto".
