@@ -1,1 +1,3 @@
-Based de ptyhon
+# Based de ptyhon
+
+basic principals to python
